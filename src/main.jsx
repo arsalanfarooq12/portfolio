@@ -1,32 +1,14 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
-import Home from "./routes/Home";
-import ErrorPage from "./error-page";
-import About from "./routes/About";
-import Resume from "./routes/Resume";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App"; // Import your main App component
+import "./index.css"; // Optional: Import global styles
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/resume",
-        element: <Resume />,
-      },
-    ],
-  },
-]);
+// Create a root element to render the app
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Render the App component inside the root element
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
