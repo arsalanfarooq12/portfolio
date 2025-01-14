@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Resume() {
   return (
-    <div className="  bg-gradient-to-r from-indigo-700 from-20% via-sky-800 via-30% to-emerald-900 to-80% ">
+    <div className="  bg-gradient-to-r from-green-700 from-30% via-yellow-800 via-20% to-emerald-800 to-80% ">
       <div className="px-4 sm:px-0">
         <h3 className="text-base font-semibold leading-7 dark:text-white">
           Resume

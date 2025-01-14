@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
+// import Landingpage from "../components/Landingpage";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -14,10 +15,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Home() {
   return (
     <>
-      <div className="screen">
+      <div className="screen bg-background1 ">
         <Disclosure as="nav" className=" bg-sky-600">
           {({ open }) => (
             <>
@@ -60,11 +61,11 @@ export default function Example() {
                             to={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-gray-900 text-white"
+                                ? "bg-gray-800 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
-                            aria-current={item.current ? "page" : undefined}
+                            aria-current={item.current ? "Home" : undefined}
                           >
                             {item.name}
                           </Link>
@@ -99,7 +100,7 @@ export default function Example() {
             </>
           )}
         </Disclosure>
-
+        {/* <Landingpage /> */}
         <div className="content-body">
           <Outlet />
         </div>
