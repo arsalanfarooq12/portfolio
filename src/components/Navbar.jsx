@@ -1,3 +1,4 @@
+import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
@@ -9,7 +10,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "About Me", href: "/about", current: false },
   { name: "Resume", href: "/resume", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects", href: "/projects", current: false },
 ];
 
 function classNames(...classes) {
@@ -47,7 +48,7 @@ export default function Navbar() {
                     <div className="flex flex-shrink-0 items-center">
                       {/* profilepic */}
                       <img
-                        className="h-14 w-14 rounded-full focus:outline-none focus:ring-2  focus:ring-offset-gray-800  focus:ring-white focus:ring-offset-2 "
+                        className="h-14 w-14 rounded-full focus:outline-none focus:ring-2  focus:ring-offset-gray-800  focus:ring-white focus:ring-offset-2   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 "
                         src={profile}
                         alt="Profile"
                       />
@@ -62,11 +63,11 @@ export default function Navbar() {
                             to={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-gray-800 text-white"
+                                ? " hover:bg-gray-700 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
-                            aria-current={item.current ? "Home" : undefined}
+                            // aria-current={item.current ? "Home" : undefined}
                           >
                             {item.name}
                           </Link>
@@ -87,7 +88,7 @@ export default function Navbar() {
                       to={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-800 text-white"
+                          ? " text-white"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "block rounded-md px-3 py-2 text-base font-medium"
                       )}
