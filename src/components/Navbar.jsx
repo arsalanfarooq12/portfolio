@@ -2,13 +2,12 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
-import Footer from "./Footer";
+
 import profile from "../assets/profile.jpg";
-// import Landingpage from "../components/Landingpage";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About Me", href: "/about", current: false },
+  // { name: "Home", href: "/", current: true },
+  { name: "About Me", href: "/", current: true },
   { name: "Resume", href: "/resume", current: false },
   { name: "Projects", href: "/projects", current: false },
 ];
@@ -21,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       <div className="screen bg-background1 ">
-        <Disclosure as="nav" className=" bg-sky-600">
+        <Disclosure as="nav" className=" bg-gray-900">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -47,11 +46,13 @@ export default function Navbar() {
                   <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
                       {/* profilepic */}
-                      <img
-                        className="h-14 w-14 rounded-full focus:outline-none focus:ring-2  focus:ring-offset-gray-800  focus:ring-white focus:ring-offset-2   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 "
-                        src={profile}
-                        alt="Profile"
-                      />
+                      <Link to="/">
+                        <img
+                          className="h-14 w-14 rounded-full focus:outline-none focus:ring-2  focus:ring-offset-gray-800  focus:ring-white focus:ring-offset-2   transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 "
+                          src={profile}
+                          alt="Profile"
+                        />
+                      </Link>
 
                       {/* navbarcontent */}
                     </div>
@@ -77,7 +78,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              {/* navbarcontent on smaLL devices */}
+              {/* navbarcontent on large devices */}
 
               <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2">
@@ -102,12 +103,10 @@ export default function Navbar() {
             </>
           )}
         </Disclosure>
-        {/* <Landingpage /> */}
+
         <div className="content-body">
           <Outlet />
         </div>
-
-        {/* footer */}
       </div>
     </>
   );

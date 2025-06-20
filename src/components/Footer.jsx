@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
-    <footer className="h-20 text-black-600 bg-sky-600 flex gap-4 justify-center pt-4 ">
+    <footer className="h-20 text-black-600 bg-gray-900 flex gap-4 justify-center pt-4 ">
       <a
         href="https://www.facebook.com/imu.imad.73"
         target="_blank"

@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Protest+Revolution&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Protest+Revolution&display=swap");
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
 
-
+.body {
+  background-color: #111827;
+}
