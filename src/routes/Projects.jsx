@@ -4,9 +4,11 @@ import ProjectCard from "../components/Projectcard";
 import { motion } from "motion/react";
 const projects = [
   {
-    title: "Project One",
-    description: "This is a brief description of Project One.",
-    image: "https://via.placeholder.com/400",
+    title: "Valley gym",
+    description:
+      "The first and only fitness club in the rural area of Kashmir. We are a family-owned and operated business that aims to provide you with a safe, comfortable and motivating environment to achieve your fitness goals..",
+    image:
+      "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGd5bXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     title: "Project Two",
@@ -36,14 +38,15 @@ const box1 = {
 const Projects = () => {
   return (
     <>
-      <div className=" ">
-        <div className=" h-screen Box1 flex flex-wrap justify-center min-h-96 bg-gray-600">
+      <div className=" min-h-screen bg-gray-600">
+        <div className=" minh-screen Box1 flex flex-wrap justify-center min-h-96 ">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
               description={project.description}
               image={project.image}
+              page={"https://arsalanfarooq12.github.io/gym1/"}
             />
           ))}
         </div>
