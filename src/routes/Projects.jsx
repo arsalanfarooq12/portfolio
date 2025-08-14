@@ -1,7 +1,7 @@
 // src/ProjectsPage.js
 import React from "react";
 import ProjectCard from "../components/Projectcard";
-import { motion } from "motion/react";
+
 const projects = [
   {
     title: "Valley gym",
@@ -9,6 +9,7 @@ const projects = [
       "The first and only fitness club in the rural area of Kashmir. We are a family-owned and operated business that aims to provide you with a safe, comfortable and motivating environment to achieve your fitness goals..",
     image:
       "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGd5bXxlbnwwfHwwfHx8MA%3D%3D",
+    page: "https://arsalanfarooq12.github.io/GymApp/",
   },
   {
     title: "Project Two",
@@ -38,23 +39,18 @@ const box1 = {
 const Projects = () => {
   return (
     <>
-      <div className=" min-h-screen bg-gray-600">
-        <div className=" minh-screen Box1 flex flex-wrap justify-center min-h-96 ">
+      <div className=" h-fit  bg-gray-600">
+        <div className="  flex-col flex-wrap justify-center align-top  min-h-96 ">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
               description={project.description}
               image={project.image}
-              page={"https://arsalanfarooq12.github.io/gym1/"}
+              page={project.page}
             />
           ))}
         </div>
-        <motion.Box1
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.8 }}
-          // style={box1}
-        />
       </div>
     </>
   );

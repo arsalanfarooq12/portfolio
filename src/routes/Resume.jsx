@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Resume() {
   return (
-    <div className=" bg-gray-800 text-gray-100 h-screen ">
+    <div className=" bg-gray-800 text-gray-100 h-fit ">
       <div className="px-4 sm:px-0">
         <h3 className="text-base font-semibold leading-7 dark:text-gray-100">
           Resume
@@ -53,11 +53,11 @@ export default function Resume() {
 
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt className="text-sm font-medium leading-6 dark:text-gray-100">
-              <Link to="/projects">
+              <a href="/projects">
                 <button className=" bg-gray-900 rounded-xl p-1 text-white">
                   Projects
                 </button>
-              </Link>
+              </a>
             </dt>
           </div>
         </dl>
