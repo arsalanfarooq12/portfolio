@@ -6,7 +6,11 @@ export default {
       // backgroundImage: {
       //   background2: "url('srcassets\bg.002.jpg')",
       //   background1: "url('srcassets\bg01.jpg')",
+
       // },
+      zIndex: {
+        "-10": "-10", // Enables z-index like -z-10
+      },
     },
   },
   plugins: [],

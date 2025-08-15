@@ -1,41 +1,62 @@
-import ProfileCard from "../components/ProfileCard";
-
+import React from "react";
+import SplitText from "../components/SplitText";
 export default function About() {
   return (
-    <>
-      <div className=" h-fit flex bg-gray-800 py-24 sm:py-32">
-        <section className="ml-20 ">
-          <ProfileCard
-            name="Arsalan Farooq"
-            title="Web Designer"
-            handle="arsalanfarooq"
-            status="Online"
-            contactText="Contact Me"
-            avatarUrl="src\assets\card.png"
-            showUserInfo={true}
-            enableTilt={true}
-            enableMobileTilt={false}
-            // onContactClick={() => console.log('Contact clicked')}
-          />
-        </section>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              About ME
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              <i className="text-3xl">Arsalan Farooq</i>
-              <br />
-              <br />
-              Aspiring Front End Developer, currently pursuing B.Tech in
-              Computer Science. Seeking to leverage strong foundation in web
-              development and training experience to deliver high-quality work
-              as a Front End Developer.
-            </p>
-          </div>
+    <div className="bg-zinc-950 min-h-screen flex justify-center items-center">
+      <div className="bg-zinc-900 rounded-lg shadow-lg p-8  max-w-fit">
+        {/* Brief Introduction */}
+        <div className="mb-6 flex-col justify-center ">
+          <h2 className="text-2xl font-bold  text-white mb-2">About</h2>
+          <p className="text-gray-300">
+            <SplitText
+              text=" A passionate developer interested in building frontend applications  
+             and exploring new technologies."
+              className="text-xl font-semibold text-center"
+              delay={50}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
+          </p>
+        </div>
+        {/* Education Information */}
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold text-white mb-2">Education</h3>
+          <ul className="list-disc list-inside text-gray-300">
+            <li>Completed 12th from Govt. Higher Secondary School</li>
+            <li>Currently pursuing B.Tech in Computer Science</li>
+          </ul>
+        </div>
+        {/* Skills */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">Skills</h3>
+          <ul className="flex flex-wrap gap-2">
+            <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
+              Front-end in React
+            </li>
+            <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
+              Version Control with Git
+            </li>
+            <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
+              Tailwind Styling
+            </li>
+          </ul>
+        </div>
+        <div className="mt-4">
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-block bg-blue-600 text-white font-medium px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
