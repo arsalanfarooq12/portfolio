@@ -7,22 +7,21 @@ export default function About() {
         {/* Brief Introduction */}
         <div className="mb-6 flex-col justify-center ">
           <h2 className="text-2xl font-bold  text-white mb-2">About</h2>
-          <p className="text-gray-300">
-            <SplitText
-              text=" A passionate developer interested in building frontend applications  
+
+          <SplitText
+            text=" A passionate developer interested in building frontend applications  
              and exploring new technologies."
-              className="text-xl font-semibold text-center"
-              delay={50}
-              duration={0.6}
-              ease="power3.out"
-              splitType="chars"
-              from={{ opacity: 0, y: 40 }}
-              to={{ opacity: 1, y: 0 }}
-              threshold={0.1}
-              rootMargin="-100px"
-              textAlign="center"
-            />
-          </p>
+            className="text-xl font-semibold text-center text-gray-400"
+            delay={50}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
         </div>
         {/* Education Information */}
         <div className="mb-6">

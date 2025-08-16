@@ -40,8 +40,8 @@ const Projects = () => {
   return (
     <>
       <div className="text-gray-200 text-2xl pl-8 pt-12">Projects</div>
-      <div className=" h-fit flex bg-zinc-950">
-        <div className="  flex flex-grow justify-center align-top  min-h-96 ">
+      <div className=" h-fit   bg-zinc-950">
+        <div className=" max-w-full flex flex-wrap justify-center align-top  min-h-96 ">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

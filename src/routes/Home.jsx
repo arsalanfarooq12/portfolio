@@ -4,8 +4,8 @@ import TextType from "../components/TextType";
 export default function Home() {
   return (
     <>
-      <div className=" h-screen w-full flex justify-between bg-transparent py-10 sm:py-20 max-sm:flex-col max-sm:justify-center ">
-        <section className="ml-20 max-sm:mt-36 ">
+      <div className=" h-fit w-full flex flex-col items-center justify-center md:flex-row bg-transparent   ">
+        <section className="  ">
           <ProfileCard
             // name="Arsalan Farooq"
             // title="Web Designer"
@@ -39,7 +39,7 @@ export default function Home() {
               pauseDuration={1500}
               showCursor={true}
               cursorCharacter="_"
-              className="text-2xl w-48 max-sm:w-fit"
+              className="text-2xl w-48 "
             />
           </div>
         </div>
