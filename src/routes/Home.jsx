@@ -12,7 +12,7 @@ export default function Home() {
             handle="arsalanfarooq"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="src\assets\card.png"
+            avatarUrl="src\assets\card.jpg"
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={false}
