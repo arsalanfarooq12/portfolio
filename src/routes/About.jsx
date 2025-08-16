@@ -10,7 +10,7 @@ export default function About() {
 
           <SplitText
             text=" A passionate developer interested in building frontend applications  
-             and exploring new technologies."
+                    and -- exploring new technologies."
             className="text-xl font-semibold text-center text-gray-400"
             delay={50}
             duration={0.6}

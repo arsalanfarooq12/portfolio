@@ -15,7 +15,7 @@ export default function Home() {
             avatarUrl="/assets/card.png"
             showUserInfo={true}
             enableTilt={true}
-            enableMobileTilt={false}
+            enableMobileTilt={true}
             // onContactClick={() => {}}
           />
         </section>
