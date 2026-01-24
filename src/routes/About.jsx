@@ -9,8 +9,8 @@ export default function About() {
           <h2 className="text-2xl font-bold  text-white mb-2">About</h2>
 
           <SplitText
-            text=" A passionate developer interested in building frontend applications  
-                    and -- exploring new technologies."
+            text=" A passionate developer interested in building  applications  
+                    and exploring new technologies."
             className="text-xl font-semibold text-center text-gray-400"
             delay={50}
             duration={0.6}
@@ -34,7 +34,7 @@ export default function About() {
         {/* Skills */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-2">Skills</h3>
-          <ul className="flex flex-wrap gap-2">
+          <ul className="flex flex-col flex-wrap gap-2 max-w-fit">
             <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
               Javascript ,React
             </li>

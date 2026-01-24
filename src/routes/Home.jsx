@@ -29,11 +29,11 @@ export default function Home() {
 
             <TextType
               text={[
-                " Aspiring Front End Developer",
+                " Aspiring Fullstack Developer",
                 "Currently pursuing B.Tech in Computer Science",
-                " Seeking to leverage strong foundation in web development ",
+                " Seeking to leverage strong foundation in DevOps ",
                 "And training experience to deliver high-quality work ",
-                " As a Front End Developer.",
+                " As a  Developer and Operator.",
               ]}
               typingSpeed={75}
               pauseDuration={1500}
