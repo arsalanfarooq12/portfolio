@@ -36,24 +36,30 @@ export default function About() {
           <h3 className="text-xl font-semibold text-white mb-2">Skills</h3>
           <ul className="flex flex-wrap gap-2">
             <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
-              Front-end in React
+              Javascript ,React
             </li>
             <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
-              Version Control with Git
+              Version Control with Git & GitHub
             </li>
             <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
-              Tailwind Styling
+              Python and Flask
+            </li>
+            <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
+              `Docker and K8S(openshift)`
+            </li>
+            <li className="bg-gray-700 text-gray-200 px-3 py-1 rounded">
+              Linux and shell scripting
             </li>
           </ul>
         </div>
         <div className="mt-4">
-          <a
+          {/* <a
             href="/resume.pdf"
             download
             className="inline-block bg-blue-600 text-white font-medium px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
           >
             Download Resume
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
