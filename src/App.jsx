@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Projects from "./routes/Projects";
 import LightRays from "./components/LightRays";
 import Home from "./routes/Home";
+import { GitHubCalendar } from "react-github-calendar";
 
 const App = () => {
   return (
@@ -47,6 +48,10 @@ const App = () => {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section className="ml-10">
+          <div>GitHub Contributions</div>
+          <GitHubCalendar colorScheme="dark" username="arsalanfarooq12" />
         </section>
         <section id="contact">
           <Footer />
