@@ -11,22 +11,13 @@ const projects = [
       "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGd5bXxlbnwwfHwwfHx8MA%3D%3D",
     page: "https://arsalanfarooq12.github.io/GymApp/",
   },
-  // {
-  //   title: "Project Two",
-  //   description: "This is a brief description of Project Two.",
-  //   image: "https://via.placeholder.com/400",
-  // },
-  // {
-  //   title: "Project Three",
-  //   description: "This is a brief description of Project Three.",
-  //   image: "https://via.placeholder.com/400",
-  // },
-  // {
-  //   title: "Project Four",
-  //   description: "This is a brief description of Project Four.",
-  //   image: "https://via.placeholder.com/400",
-  // },
-  // Add more projects as needed
+  {
+    title: "Tasks App",
+    description:
+      "Add your tasks here and manage them with ease. You can add new tasks, mark them as completed, and delete them when they're done. Stay organized and boost your productivity with our simple and intuitive task management app.",
+    image: "/assets/Screenshot_20260206_231718.jpg",
+    page: "https://photocircle.vercel.app/",
+  },
 ];
 // styles for motion box1
 const box1 = {
