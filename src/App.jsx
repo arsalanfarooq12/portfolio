@@ -49,7 +49,7 @@ const App = () => {
         <section id="projects">
           <Projects />
         </section>
-        <section className="ml-10">
+        <section className="flex-col justify-center grow ">
           <div>GitHub Contributions</div>
           <GitHubCalendar colorScheme="dark" username="arsalanfarooq12" />
         </section>
