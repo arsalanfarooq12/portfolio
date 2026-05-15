@@ -3,11 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   background2: "url('srcassets\bg.002.jpg')",
-      //   background1: "url('srcassets\bg01.jpg')",
-
-      // },
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+      },
       zIndex: {
         "-10": "-10", // Enables z-index like -z-10
       },

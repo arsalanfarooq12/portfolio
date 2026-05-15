@@ -38,7 +38,7 @@ export default function Home() {
               typingSpeed={75}
               pauseDuration={1500}
               showCursor={true}
-              cursorCharacter="_"
+              cursorCharacter="!"
               className="text-2xl w-48 "
             />
           </div>

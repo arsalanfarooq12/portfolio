@@ -10,17 +10,18 @@ import Footer from "./components/Footer";
 import Projects from "./routes/Projects";
 import LightRays from "./components/LightRays";
 import Home from "./routes/Home";
-import { GitHubCalendar } from "react-github-calendar";
+// import { GitHubCalendar } from "react-github-calendar";
+import ContributionSection from "./components/ContributionSection";
 
 const App = () => {
   return (
     <>
       {/* ---navigation bar----- */}
-      <div className="sticky bg-zinc-950  ">
+      <div className="sticky bg-slate-950  ">
         <Navbar />
 
         {/* ----------backdrop from reactbits------- */}
-        <div className="w-screen h-full bg-zinc-950 flex  justify-center    ">
+        <div className="w-screen h-full bg-slate-950 flex  justify-center    ">
           {/* componenets which has background from reactbits should have absolute position */}
 
           <div style={{ width: "100%", height: "600px", position: "relative" }}>
@@ -49,9 +50,8 @@ const App = () => {
         <section id="projects">
           <Projects />
         </section>
-        <section className="flex-col justify-center grow ">
-          <div>GitHub Contributions</div>
-          <GitHubCalendar colorScheme="dark" username="arsalanfarooq12" />
+        <section>
+          <ContributionSection />
         </section>
         <section id="contact">
           <Footer />
