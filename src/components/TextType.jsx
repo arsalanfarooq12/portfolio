@@ -6,10 +6,10 @@ import { gsap } from "gsap";
 const TextType = ({
   text,
   as: Component = "div",
-  typingSpeed = 50,
+  typingSpeed = 10,
   initialDelay = 0,
   pauseDuration = 2000,
-  deletingSpeed = 30,
+  deletingSpeed = 10,
   loop = true,
   className = "",
   showCursor = true,

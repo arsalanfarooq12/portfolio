@@ -19,18 +19,33 @@ import { motion } from "framer-motion";
 const tools = [
   {
     name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
     name: "Node.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
   },
-  { name: "TypeScript", icon: "https://jsdelivr.net" },
-  { name: "MongoDB", icon: "https://jsdelivr.net" },
-  { name: "PostgreSQL", icon: "https://jsdelivr.net" },
-  { name: "Docker", icon: "https://jsdelivr.net" },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
+  },
 
-  { name: "Linux", icon: "https://jsdelivr.net" },
+  {
+    name: "Linux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+  },
 ];
 
 // Duplicate the array so the track stays seamlessly populated during translation shifts
@@ -58,7 +73,7 @@ export function TechMarquee() {
           {scrollingTools.map((tool, idx) => (
             <div
               key={idx}
-              className="flex flex-shrink-0 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 shadow-sm transition-transform duration-200 hover:scale-105 dark:border-slate-800 dark:bg-slate-900"
+              className="flex flex-shrink-0 items-center gap-2 rounded-xl border border-slate-200 t bg-white px-4 py-2 shadow-sm transition-transform duration-200 hover:scale-105 dark:border-slate-800 dark:bg-slate-900"
             >
               <img
                 src={tool.icon}
@@ -137,7 +152,7 @@ export default function About() {
               </div>
               <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
                 Building responsive React frontends coupled with secure,
-                type-safe RESTL APIs in Node.js (Express.js).
+                type-safe REST APIs in Node.js (Express.js).
               </p>
             </div>
 
