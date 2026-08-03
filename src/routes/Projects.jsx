@@ -22,6 +22,16 @@ import ProjectCard from "../components/Projectcard";
 
 const projects = [
   {
+    title: "Finance AI",
+    description:
+      "An AI-powered financial analysis tool that provides insights and recommendations for investment decisions",
+    tech: ["React.js", "TypeScript", "RAG", "Node.js", "Express"],
+    liveUrl: "https://finance-agent-one-azure.vercel.app/",
+    githubUrl: "https://github.com/arsalanfarooq12/Finance-AI",
+    image: "/images/finance-ai-preview.png",
+    host: "vercel",
+  },
+  {
     title: "Skillsync Platform",
     description:
       "A full-stack skill-sharing platform where users can list skills they offer and request skills from others, enabling peer-to-peer knowledge exchange",
@@ -31,15 +41,26 @@ const projects = [
     image: "/images/skillsync-preview.png",
     host: "Netlify",
   },
+
+  // {
+  //   title: "Habit Tracker App",
+  //   description:
+  //     "A simple habit tracker application that allows users to track their habits visually using a contribution grid",
+  //   tech: ["html", "css", "javascript"],
+  //   liveUrl: "https://arsalanfarooq12.github.io/habit-tracker/", // Hosted on GitHub Pages
+  //   githubUrl: "https://github.com/arsalanfarooq12/habit-tracker.git",
+  //   image: "/images/habit-tracker-preview.png",
+  //   host: "GitHub Pages",
+  // },
   {
-    title: "Habit Tracker App",
+    title: "Al-Hind Travel",
     description:
-      "A simple habit tracker application that allows users to track their habits visually using a contribution grid",
-    tech: ["html", "css", "javascript"],
-    liveUrl: "https://arsalanfarooq12.github.io/habit-tracker/", // Hosted on GitHub Pages
-    githubUrl: "https://github.com/arsalanfarooq12/habit-tracker.git",
-    image: "/images/habit-tracker-preview.png",
-    host: "GitHub Pages",
+      "A travel booking platform for hajj and umrah services, allowing users to browse packages, book trips.",
+    tech: ["Next.js", "Tailwind CSS"],
+    liveUrl: "https://alhindtravel.vercel.app/",
+    // githubUrl: "https://github.com/arsalanfarooq12/Al-Hind-Travel",
+    image: "/images/al-hind-travel-preview.png",
+    host: "Vercel",
   },
   {
     title: "Tasks App",

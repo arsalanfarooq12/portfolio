@@ -12,7 +12,7 @@ export default function Home() {
             handle="arsalanfarooq"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="/assets/card.png"
+            avatarUrl="/assets/hero-pic.webp"
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={true}
@@ -27,7 +27,7 @@ export default function Home() {
               <br />
             </p>
 
-            <TextType
+            {/* <TextType
               text={[
                 " Aspiring Fullstack Developer",
                 "Currently pursuing B.Tech in Computer Science",
@@ -35,12 +35,12 @@ export default function Home() {
                 "And training experience to deliver high-quality work ",
                 " As a  Developer and Operator.",
               ]}
-              typingSpeed={75}
+              typingSpeed={1}
               pauseDuration={1500}
               showCursor={true}
-              cursorCharacter="!"
+              cursorCharacter="|"
               className="text-2xl w-48 "
-            />
+            /> */}
           </div>
         </div>
       </div>
