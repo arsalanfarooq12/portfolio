@@ -62,23 +62,23 @@ const projects = [
     image: "/images/al-hind-travel-preview.png",
     host: "Vercel",
   },
-  {
-    title: "Tasks App",
-    description:
-      "A cross-platform task management app with a shared Express.js REST API backend serving both web (React.js) and mobile (React Native/Expo) clients.",
-    tech: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Node.js",
-      "Express",
-    ],
-    liveUrl: "https://photocircle.vercel.app/login",
-    githubUrl: "https://github.com/arsalanfarooq12/photocircle",
-    image: "/images/tasks-preview.png",
-    host: "Vercel",
-  },
+  // {
+  //   title: "Tasks App",
+  //   description:
+  //     "A cross-platform task management app with a shared Express.js REST API backend serving both web (React.js) and mobile (React Native/Expo) clients.",
+  //   tech: [
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "PostgreSQL",
+  //     "Node.js",
+  //     "Express",
+  //   ],
+  //   liveUrl: "https://photocircle.vercel.app/login",
+  //   githubUrl: "https://github.com/arsalanfarooq12/photocircle",
+  //   image: "/images/tasks-preview.png",
+  //   host: "Vercel",
+  // },
 ];
 
 export default function Projects() {
@@ -90,8 +90,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-lg text-slate-500 dark:text-slate-400 sm:mt-4">
-            A showcase of my recent web development work across different
-            hosting environments.
+            A showcase of my recent work.
           </p>
         </div>
 
