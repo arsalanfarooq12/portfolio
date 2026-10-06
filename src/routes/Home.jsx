@@ -9,12 +9,12 @@ export default function Home() {
           <ProfileCard
             // name="Arsalan Farooq"
             // title="Web Designer"
-            handle="arsalanfarooq"
+            handle="arsalanfarooq011"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="/assets/hero-pic.webp"
+            avatarUrl="/assets/heroPic.jpg"
             showUserInfo={true}
-            enableTilt={true}
+            enableTilt={false}
             enableMobileTilt={true}
             // onContactClick={() => {}}
           />
@@ -35,7 +35,7 @@ export default function Home() {
                 "And training experience to deliver high-quality work ",
                 " As a  Developer and Operator.",
               ]}
-              typingSpeed={1}
+              typingSpeed={10}
               pauseDuration={1500}
               showCursor={true}
               cursorCharacter="|"

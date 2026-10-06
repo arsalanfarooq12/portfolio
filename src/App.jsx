@@ -25,7 +25,7 @@ const App = () => {
           {/* componenets which has background from reactbits should have absolute position */}
 
           <div style={{ width: "100%", height: "600px", position: "relative" }}>
-            <LightRays
+            {/* <LightRays
               raysOrigin="top-center"
               raysColor="#00ffff"
               raysSpeed={2}
@@ -36,7 +36,7 @@ const App = () => {
               noiseAmount={0.1}
               distortion={0.05}
               className="custom-rays -z-1 absolute"
-            />
+            /> */}
           </div>
 
           <section id="home" className="absolute">

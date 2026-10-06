@@ -1,16 +1,23 @@
 const education = [
-  {
-    degree: "DevOps Certification",
-    institution: "Coursera - IBM  DevOps Professional Certificate",
-    duration: "currently enrolled",
-    description:
-      "Intensive 6-month program covering Python, Linux, Docker, Kubernetes, CI/CD ,Testing.",
-  },
+  // {
+  //   degree: "DevOps Certification",
+  //   institution: "Coursera - IBM  DevOps Professional Certificate",
+  //   duration: "currently enrolled",
+  //   description:
+  //     "Intensive 6-month program covering Python, Linux, Docker, Kubernetes, CI/CD ,Testing.",
+  // },
   {
     degree: "Bachelor of Science in Computer Science",
     institution: "University of Kashmir",
     duration: "2023 — 2027",
     description: "Specialized in Software Engineering and Web Architecture.",
+  },
+  {
+    degree: "Higher Secondary Education",
+    institution: " Jammu and Kashmir Board of School Education",
+    duration: "2020 — 2022",
+    description:
+      "Completed Higher Secondary Education with a focus on Science and Mathematics.",
   },
 ];
 
@@ -219,7 +226,7 @@ export default function About() {
                     alt={tool.name}
                     className="h-6 w-6 object-contain"
                   />
-                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <span className="text-sm font-medium text-slate-900 dark:text-slate-600">
                     {tool.name}
                   </span>
                 </div>
